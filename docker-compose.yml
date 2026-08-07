@@ -1,7 +1,6 @@
 services:
   react-app:
     image: react-static-app:v1
-    container_name: react-app
     ports:
       - "80:80"
     restart: unless-stopped
