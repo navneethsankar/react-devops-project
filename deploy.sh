@@ -3,8 +3,7 @@ set -e
 
 echo "Deploying application..."
 
-docker compose down || true
-
-docker compose up -d
+docker compose -p react-app down || true
+docker compose -p react-app up -d
 
 echo "Deployment completed successfully."
